@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: Nimbus-Sans;
+            src: url(asset/font/Nimbus-Sans-D-OT-Regular-Extended.ttf);
+        }
+
+        html {
+            font-family: Nimbus-Sans;
+        }
+
+        #header {
+            height: 46px;
+            background-color: black;
+        }
+
+        #brand {
+            line-height: 46px;
+            padding: 0 24px;
+            float: left;
+            color: white;
+        }
+
+        #nav {
+            display: inline-block;
+            float: right;
+        }
+
+        #nav li {
+            display: inline-block;
+        }
+
+        #nav li a {
+            color: white;
+            text-decoration: none;
+            line-height: 46px;
+            padding: 0 30px;
+        }
+
+        #introduction {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            width: 50vw;
+        }
+
+        #introduction h2 {
+            padding-left: 24px;
+            padding-top: 40px;
+        }
+
+        .content {
+            padding-left: 24px;
+        }
+
+        .form-group {
+            margin: 20px 0;
+        }
+
+        #name, #email, #business, #project, #comment {
+            display: block;
+            margin-top: 10px;
+            padding: 5px;
+            width: 50vw;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-weight: bold;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            transition: 1s;
+        }
+
+        #contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            height: 150px;
+        }
+
+        .column {
+            max-width: 50%;
+            padding-right: 70px;
+        }
+
+        #contact-info .column p {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #contact-info .column a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer {
+            height: 200px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer p {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <!-- Begin Brand -->
+            <div id="brand">
+                <h3>Huy's Portfolio</h3>
+            </div>
+            <!-- End Brand -->
+            <!-- Begin Nav -->
+            <ul id="nav">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- End Nav -->
+        </div>
+        <div id="introduction">
+            <h2>If you have a project in mind, please complete the form below to send your enquiry.</h2>
+        </div>
+        <div id="contact-form">
+            <form action="#">
+                <div class="content">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input class="form-control" id="email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="business">Please describe your business.*</label>
+                        <textarea id="business" cols="20" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Please describe your project.*</label>
+                        <textarea id="project" cols="20" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Additional comments?</label>
+                        <textarea id="comment" cols="20" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="contact-info">
+            <div class="column">
+                <h2>Contact</h2>
+                <p>Email: abc@gmail.com</p>
+                <p>Phone: +00 151515</p>
+            </div>
+            <div class="column">
+                <h2>Social Media</h2>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Welcome to Huy's Portfolio</p>
+        </div>
+    </div>
+</body>
+</html>
